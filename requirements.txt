@@ -1,4 +1,5 @@
 flask
+pands
 scikit-learn
 numpy
 gunicorn
