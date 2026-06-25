@@ -32,12 +32,12 @@ jobs:
     # 4. Generate the model artifact dynamically during build time
     - name: Train and generate ML model
       run: |
-        python app/train.py
+        python train.py
 
     # 5. Verify local application runs correctly using basic Python check
     - name: Run code validation checks
       run: |
-        python -m compileall app/app.py
+        python -m compileall train.py
 
     # 6. Build the production Docker container artifact
     - name: Build production Docker image
