@@ -3,10 +3,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import  accuracy_score, f1_score
-from sklearn.linear_model import LogisticRegression 
-from xgboost import XGBClassifier
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.tree import DecisionTreeClassifier
 import pickle
 df = pd.read_csv('student-lifestyle-and-stress-dataset.csv')
 
