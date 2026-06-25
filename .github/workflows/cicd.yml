@@ -43,7 +43,7 @@ jobs:
     - name: Build production Docker image
       run: |
         docker build -t ml-flask-app:${{ github.sha }} .
-        docker run -p 5000:5000 --name ml-flask-app-test:${{ github.sha }} ml-flask-app:${{ github.sha }}
+        docker run -p 5000:5000 --name ml-flask-app-test ml-flask-app:${{ github.sha }}
 
     # 7. Mock Production Cloud Release Step
     - name: Simulated Cloud Deployment
